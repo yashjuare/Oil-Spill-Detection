@@ -3,14 +3,18 @@ import pandas as pd
 import numpy as np
 import cv2
 from tensorflow.keras.models import model_from_json
-import tensorflow.keras
 from PIL import Image
+import os
 
-json_file = open('C:/Users/HP/OneDrive/Desktop/oil_spills_detection/model.json', 'r')
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
+
+import keras
+
+json_file = open('model.json', 'r')
 loaded_model_json = json_file.read()
 json_file.close()
 loaded_model = model_from_json(loaded_model_json)
-loaded_model.load_weights("C:/Users/HP/OneDrive/Desktop/oil_spills_detection/model.weights.h5")
+loaded_model.load_weights("model.weights.h5")
 
 def predict(data):
     resized_image = cv2.resize(data, (224, 224))
