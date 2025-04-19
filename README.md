@@ -1,6 +1,7 @@
 <h3>Oil Spill Detection</h3>
-<b>Problem statement:</b> Traditional methods for oil spill detection, such as manual monitoring and satellite-based techniques, are often time-consuming, prone to human error, and lack scalability.<br>
-<b>Project objectives:</b> an automated detection of oil on water using only thermal infrared images utilizing a CNN<br>
+<br>
+<b>Problem statement:</b> Detection of oil spills in vast ocean is an time consuming and erroneous process. Most of the process is done by manual monitoring and satellite-based techniques which are often slow, prone to human error, and lack scalability.<br>
+<b>Project objectives:</b>Built a machine learning model with Convolutional Neural Network which can identify the oil spilled sites by reciving signals from satellite  <br>
 <b>liabery Used:</b><br> 1. Tensorflow<br>
               2. Sciket learn<br>
               3. Opencv<br>
