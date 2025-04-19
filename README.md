@@ -1,7 +1,9 @@
 <h3>Oil Spill Detection</h3>
+<hr>
 <br>
-<b>Problem statement:</b> Detection of oil spills in vast ocean is an time consuming and erroneous process. Most of the process is done by manual monitoring and satellite-based techniques which are often slow, prone to human error, and lack scalability.<br>
-<b>Project objectives:</b>Built a machine learning model with Convolutional Neural Network which can identify the oil spilled sites by reciving signals from satellite  <br>
+<b><u>Problem statement:</u></b> Detection of oil spills in vast ocean is an time consuming and erroneous process. Most of the process is done by manual monitoring and satellite-based techniques which are often slow, prone to human error, and lack scalability.<br>
+<hr>
+<b><u>Project objectives:</u></b>Built a machine learning model with Convolutional Neural Network which can identify the oil spilled sites by reciving signals from satellite  <br>
 <b>liabery Used:</b><br> 
 <ul>
 <li>Tensorflow</li>
