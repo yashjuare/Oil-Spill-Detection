@@ -24,7 +24,7 @@ def main():
     st.markdown(
         """
         <style>
-        .stAppViewContainer appview-container st-emotion-cache-1yiq2ps eht7o1d0 {
+        ."stAppViewContainer appview-container st-emotion-cache-1yiq2ps eht7o1d0" {
             background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcPbmRhJ920MvVB1mdv8gqFGQ7GFvd3spp4w&s")
         }
         </style>
