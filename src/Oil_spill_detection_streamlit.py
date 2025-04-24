@@ -7,11 +7,11 @@ from PIL import Image
 import os
 import keras
 
-json_file = open(r"model210425.json", 'r')
+json_file = open(r"src/model210425.json", 'r')
 loaded_model_json = json_file.read()
 json_file.close()
 loaded_model = model_from_json(loaded_model_json)
-loaded_model.load_weights(r"model210425.weights.h5")
+loaded_model.load_weights(r"src/model210425.weights.h5")
 
 def predict(data):
     resized_image = cv2.resize(data, (128, 128))
