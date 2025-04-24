@@ -58,7 +58,7 @@ def main():
     "Sample images of oil spilled ocean",
     ("Class1_sample1.jpg", "Class1_sample2.jpg", "Class1_sample3.jpg", 'Class1_sample4.jfif', 'Class1_sample5.jfif', 'Class1_sample6.jfif'), index= None, placeholder= 'select samples',)
     if option is not None:
-        data = Image.open(f'sample_images/{o}'.format(option))
+        data = Image.open(f'sample_images/{option}'.format(option))
         data = np.array(data)
         st.image(data, caption="Uploaded Image.", use_column_width= True)
         st.sidebar.write("You selected:", option)
@@ -67,7 +67,7 @@ def main():
     "Sample images of clean ocean",
     ("Class0_sample1.jpg", "Class0_sample2.jpg", "Class0_sample3.jpg", 'Class0_sample4.jfif', 'Class0_sample5.jfif', 'Class0_sample6.jfif'), index= None, placeholder= 'select samples',)
     if option is not None:
-        data = Image.open(f'sample_images/{o}'.format(option))
+        data = Image.open(f'sample_images/{option}'.format(option))
         data = np.array(data)
         st.image(data, caption="Uploaded Image.", use_column_width= True)
         st.sidebar.write("You selected:", option)
