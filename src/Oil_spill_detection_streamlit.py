@@ -21,15 +21,16 @@ def predict(data):
     return predictions
 
 def main():
-    page_bg_img = '''
-    <style>
-    stMainBlockContainer block-container st-emotion-cache-yw8pof ekr3hml4 {
-    background-color: bluevoilet;
-    }
-    </style>
-    '''
-
-    st.markdown(page_bg_img, unsafe_allow_html=True)
+    st.markdown(
+        """
+        <style>
+        .stAppViewContainer appview-container st-emotion-cache-1yiq2ps eht7o1d0 {
+            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcPbmRhJ920MvVB1mdv8gqFGQ7GFvd3spp4w&s")
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
     st.title("Oil Spill Detection System", )
     st.sidebar.title("Oil Spill Detection System ")
     html_temp = """
