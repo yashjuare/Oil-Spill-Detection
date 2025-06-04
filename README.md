@@ -1,10 +1,15 @@
-<h3>Oil Spill Detection</h3>
+<h3>Porject Name</h3>
+<b>Oil Spill Detection</b>
+<b>Project Status : Completed</b>
 <a href=https://oil-spilled-detection.streamlit.app/>View Demo</a>
+<hr>  a
+<b><u>Problem statement :</u></b> Detection of oil spills in vast ocean is an time consuming and inaccurate process. Most of the process is done by manual monitoring and satellite-based techniques which are often slow, prone to human error, and lack scalability.<br>
 <hr>
-<b><u>Problem statement:</u></b> Detection of oil spills in vast ocean is an time consuming and inaccurate process. Most of the process is done by manual monitoring and satellite-based techniques which are often slow, prone to human error, and lack scalability.<br>
+<b><u>Project objectives:</u></b> Built a machine learning model with Convolutional Neural Network which can identify the oil spilled sites by reciving signals from satellite.<br>
 <hr>
-<b><u>Project objectives:</u></b>Built a machine learning model with Convolutional Neural Network which can identify the oil spilled sites by reciving signals from satellite  <br>
-<b>liabery Used:</b><br> 
+<b>Need of Project</b>
+<hr>
+<b>library used :</b><br> 
 <ul>
 <li>Tensorflow</li>
 <li>Sciket learn</li>
@@ -16,7 +21,11 @@
 <li>Keras</li>
 <li>Matplotlib</li>
 </ul>
-Data Preprocessing:<br>
+<hr>
+<u>Methdology</u>
+<hr>
+<b>Data Preprocessing :</b>  
+<br>
 Data Modeling:<br>
 Model Evaluation:<br>
 <b>Model Deployment:</b><br>
