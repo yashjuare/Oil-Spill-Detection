@@ -2,3 +2,4 @@ opencv-python-headless
 tensorflow
 matplotlib 
 ultralytics
+opencv-python
