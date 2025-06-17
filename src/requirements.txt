@@ -1,6 +1,7 @@
 tensorflow
 pillow
+libgl1
 opencv-python-headless
 matplotlib
 ultralytics
-libgl1
+
