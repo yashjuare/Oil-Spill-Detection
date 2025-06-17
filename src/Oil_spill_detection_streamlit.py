@@ -4,14 +4,17 @@ import numpy as np
 import cv2
 from tensorflow.keras.models import model_from_json
 from PIL import Image
+import matplotlib.pyplot as plt
 import os
 import keras
+from ultralytics import YOLO
 
 json_file = open(r"src/model210425.json", 'r')
 loaded_model_json = json_file.read()
 json_file.close()
 loaded_model = model_from_json(loaded_model_json)
 loaded_model.load_weights(r"src/model210425.weights.h5")
+yolov8_model = YOLO('best.pt')
 
 def predict(data):
     resized_image = cv2.resize(data, (128, 128))
@@ -19,6 +22,12 @@ def predict(data):
     test_pred = np.expand_dims(test_pred, axis=0)
     predictions = loaded_model.predict(test_pred)    
     return predictions
+
+def mask(data):
+    new_results = yolov8_model.predict(data, conf=0.5)
+    new_result_array = new_results[0].plot()
+    plt.figure(figsize=(12, 12))
+    plt.imshow(new_result_array)
 
 def main():
     st.markdown(
@@ -78,7 +87,8 @@ def main():
         result = predict(data)
         if result is not None:
             st.write(f"Prediction result: {result}")
-            
+            if st.button("View Mask Image"):
+                    mask()
             if result[0][0] > 0.5:
                 st.write("Prediction: Oil Spill Detected!")
             else:
