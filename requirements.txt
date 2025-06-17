@@ -3,4 +3,3 @@ libgl1
 tensorflow
 matplotlib 
 ultralytics
-opencv-python
