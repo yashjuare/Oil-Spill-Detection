@@ -30,7 +30,7 @@ def main():
         """
         <style>
         .stApp {
-            background-image: url("https://plus.unsplash.com/premium_photo-1673002094039-3b4a9e8d1fff?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-image: url("https://images.unsplash.com/photo-1618502396341-5c680e7d7233?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
             background-size: cover;
         }
         </style>
