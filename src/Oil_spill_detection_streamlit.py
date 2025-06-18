@@ -25,8 +25,7 @@ def predict(data):
 def mask(data):
     new_results = yolov8_model.predict(data, conf=0.5)
     new_result_array = new_results[0].plot()
-    plt.figure(figsize=(12, 12))
-    plt.imshow(new_result_array)
+    return new_result_array
 
 def main():
     st.markdown(
@@ -87,7 +86,7 @@ def main():
         if result is not None:
             st.write(f"Prediction result: {result}")
             if st.button("View Mask Image"):
-                    mask(data)
+                    st.image( mask(data), caption="Uploaded Image.", use_container_width= True)
             if result[0][0] > 0.5:
                 st.write("Prediction: Oil Spill Detected!")
             else:
