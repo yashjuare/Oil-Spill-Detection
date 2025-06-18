@@ -8,6 +8,7 @@ import os
 import keras
 from ultralytics import YOLO
 
+
 json_file = open(r"src/model210425.json", 'r')
 loaded_model_json = json_file.read()
 json_file.close()
@@ -52,13 +53,16 @@ def main():
     
     
     file_upload = st.sidebar.file_uploader("Choose SAR image file of sea water " ,type=['.jpg','.png'],accept_multiple_files=False,key="fileUploader")
-    if file_upload is not None :
-            data = Image.open(file_upload)
-            
-            data = np.array(data)
-        
-            st.image(data, caption="Uploaded Image.", use_container_width= True)  
-        
+    if file_upload is not None:
+        data = Image.open(file_upload)
+        data = np.array(data)
+        st.session_state["image_data"] = data
+        st.image(data, caption="Uploaded Image.", use_column_width=True)
+    elif option is not None:
+        data = Image.open(f'sample_images/{option}')
+        data = np.array(data)
+        st.session_state["image_data"] = data
+        st.image(data, caption="Sample Image", use_column_width=True)
     else:
         st.sidebar.warning("you need to upload image file.")
 
@@ -78,24 +82,21 @@ def main():
         data = Image.open(f'sample_images/{option}'.format(option))
         data = np.array(data)
         st.image(data, caption="Uploaded Image.", use_column_width= True)
-        st.sidebar.write("You selected:", option)
-            
-    result = ""
+        st.sidebar.write("You selected:", option)\
+        
     if st.button("Predict"):
-        result = predict(data)
-        if result is not None:
+        if "image_data" in st.session_state:
+            result = predict(st.session_state["image_data"])
+            st.session_state["prediction"] = result
             st.write(f"Prediction result: {result}")
             if result[0][0] > 0.5:
-                st.write("Prediction: Oil Spill Detected!")
-                if st.button("View Mask Image"):
-                    mask_img = mask(data)
-                    st.image(mask_img, caption="Detected Mask", use_column_width=True)
+                st.success("Prediction: Oil Spill Detected!")
             else:
-                st.write("Prediction: No Oil Spill Detected!")
-                
-        else:
-            st.write("Prediction failed. Please try again.")
+                st.info("Prediction: No Oil Spill Detected!")
 
-
+    if st.button("View Mask Image"):
+        if "image_data" in st.session_state:
+            mask_img = mask(st.session_state["image_data"])
+            st.image(mask_img, caption="Detected Mask", use_column_width=True)
 if __name__=='__main__':
     main()
