@@ -13,7 +13,7 @@ loaded_model_json = json_file.read()
 json_file.close()
 loaded_model = model_from_json(loaded_model_json)
 loaded_model.load_weights(r"src/model210425.weights.h5")
-yolov8_model = YOLO('best.pt')
+yolov8_model = YOLO(r'src/best.pt')
 
 def predict(data):
     resized_image = Image.fromarray(data).resize((128, 128))  
