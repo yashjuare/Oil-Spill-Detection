@@ -16,10 +16,10 @@ loaded_model.load_weights(r"src/model210425.weights.h5")
 yolov8_model = YOLO('best.pt')
 
 def predict(data):
-    resized_image = data.resize(data, (128, 128))
-    test_pred = resized_image.astype('float32') / 255
+    resized_image = Image.fromarray(data).resize((128, 128))  
+    test_pred = np.array(resized_image).astype('float32') / 255
     test_pred = np.expand_dims(test_pred, axis=0)
-    predictions = loaded_model.predict(test_pred)    
+    predictions = loaded_model.predict(test_pred)
     return predictions
 
 def mask(data):
@@ -87,7 +87,7 @@ def main():
         if result is not None:
             st.write(f"Prediction result: {result}")
             if st.button("View Mask Image"):
-                    mask()
+                    mask(data)
             if result[0][0] > 0.5:
                 st.write("Prediction: Oil Spill Detected!")
             else:
