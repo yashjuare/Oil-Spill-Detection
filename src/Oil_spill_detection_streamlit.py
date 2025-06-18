@@ -24,7 +24,7 @@ def predict(data):
     return predictions
 
 def mask(data):
-    new_results = yolov8_model.predict(data, conf=0.5)
+    new_results = yolov8_model.predict(data, conf=0.3)
     new_result_array = new_results[0].plot()
     return new_result_array
 
@@ -53,18 +53,6 @@ def main():
     
     
     file_upload = st.sidebar.file_uploader("Choose SAR image file of sea water " ,type=['.jpg','.png'],accept_multiple_files=False,key="fileUploader")
-    if file_upload is not None:
-        data = Image.open(file_upload)
-        data = np.array(data)
-        st.session_state["image_data"] = data
-        st.image(data, caption="Uploaded Image.", use_column_width=True)
-    elif option is not None:
-        data = Image.open(f'sample_images/{option}')
-        data = np.array(data)
-        st.session_state["image_data"] = data
-        st.image(data, caption="Sample Image", use_column_width=True)
-    else:
-        st.sidebar.warning("you need to upload image file.")
 
     option = st.sidebar.selectbox(
     "Sample images of oil spilled ocean",
@@ -83,7 +71,20 @@ def main():
         data = np.array(data)
         st.image(data, caption="Uploaded Image.", use_column_width= True)
         st.sidebar.write("You selected:", option)\
-        
+
+    if file_upload is not None:
+        data = Image.open(file_upload)
+        data = np.array(data)
+        st.session_state["image_data"] = data
+        st.image(data, caption="Uploaded Image.", use_column_width=True)
+    elif option is not None:
+        data = Image.open(f'sample_images/{option}')
+        data = np.array(data)
+        st.session_state["image_data"] = data
+        st.image(data, caption="Sample Image", use_column_width=True)
+    else:
+        st.sidebar.warning("you need to upload image file.")
+
     if st.button("Predict"):
         if "image_data" in st.session_state:
             result = predict(st.session_state["image_data"])
