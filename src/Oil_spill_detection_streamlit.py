@@ -30,7 +30,7 @@ def main():
         """
         <style>
         .stApp {
-            background-image: url("https://www-cdn.eumetsat.int/files/styles/16_9_large/public/2023-10/ocean-color.jpg?h=e5aec6c8&itok=eS5RYIRn");
+            background-image: url("https://thumbs.dreamstime.com/z/calm-sea-ocean-colorful-sunset-sunrise-sky-background-warm-cold-colors-90746331.jpg?ct=jpeg");
             background-size: cover;
         }
         </style>
