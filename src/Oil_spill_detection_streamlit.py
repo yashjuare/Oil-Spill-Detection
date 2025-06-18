@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd 
 import numpy as np
-import cv2
 from tensorflow.keras.models import model_from_json
 from PIL import Image
 import matplotlib.pyplot as plt
@@ -17,7 +16,7 @@ loaded_model.load_weights(r"src/model210425.weights.h5")
 yolov8_model = YOLO('best.pt')
 
 def predict(data):
-    resized_image = cv2.resize(data, (128, 128))
+    resized_image = data.resize(data, (128, 128))
     test_pred = resized_image.astype('float32') / 255
     test_pred = np.expand_dims(test_pred, axis=0)
     predictions = loaded_model.predict(test_pred)    
