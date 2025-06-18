@@ -33,6 +33,15 @@ def main():
             background-image: url("https://images.stockcake.com/public/3/1/7/317563bb-9971-4032-baac-ac0f956cf453/moonlit-ocean-ripples-stockcake.jpg");
             background-size: cover;
         }
+        section[data-testid="stSidebar"] {
+            background-color: rgba(255, 255, 255, 0.1); /* Transparent white */
+            backdrop-filter: blur(8px); /* Optional blur effect */
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            z-index: 100;
+        }    
         </style>
         """,
         unsafe_allow_html=True
