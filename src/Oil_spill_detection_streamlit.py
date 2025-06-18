@@ -85,13 +85,14 @@ def main():
         result = predict(data)
         if result is not None:
             st.write(f"Prediction result: {result}")
-            if st.button("View Mask Image"):
-                mask_img = mask(data)
-                st.image(mask_img, caption="Detected Mask", use_column_width=True)
             if result[0][0] > 0.5:
                 st.write("Prediction: Oil Spill Detected!")
+                if st.button("View Mask Image"):
+                mask_img = mask(data)
+                st.image(mask_img, caption="Detected Mask", use_column_width=True)
             else:
                 st.write("Prediction: No Oil Spill Detected!")
+                
         else:
             st.write("Prediction failed. Please try again.")
 
