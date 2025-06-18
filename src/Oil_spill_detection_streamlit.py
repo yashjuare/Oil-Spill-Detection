@@ -30,7 +30,7 @@ def main():
         """
         <style>
         .stApp {
-            background-image: url("https://images.stockcake.com/public/3/1/7/317563bb-9971-4032-baac-ac0f956cf453/moonlit-ocean-ripples-stockcake.jpg");
+            background-image: url("https://images.stockcake.com/public/0/0/d/00d46b62-2f48-49fb-b8cb-463708816905_large/midnight-ocean-waves-stockcake.jpg");
             background-size: cover;
         }
         section[data-testid="stSidebar"] {
@@ -42,6 +42,10 @@ def main():
             height: 100vh;
             z-index: 100;
         }    
+        section[data-testid="stSidebar"] > div {
+            height: 100%;
+            overflow-y: auto;
+        }
         </style>
         """,
         unsafe_allow_html=True
