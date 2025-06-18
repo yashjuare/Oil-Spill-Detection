@@ -23,13 +23,13 @@ def predict(data):
 def mask(data):
     new_results = yolov8_model.predict(data, conf=0.4)
     return new_results[0].plot()  # Returns NumPy image with detection drawn
-
+st.set_page_config(
+page_title="Oil Spill Detection",
+layout="wide",
+initial_sidebar_state="expanded") 
 # App UI
 def main():
-    st.set_page_config(
-    page_title="Oil Spill Detection",
-    layout="wide",
-    initial_sidebar_state="expanded") 
+
     st.markdown(
         """
         <style>
