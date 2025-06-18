@@ -86,7 +86,8 @@ def main():
         if result is not None:
             st.write(f"Prediction result: {result}")
             if st.button("View Mask Image"):
-                    st.image( mask(data), caption="Uploaded Image.", use_container_width= True)
+                mask_img = mask(data)
+                st.image(mask_img, caption="Detected Mask", use_column_width=True)
             if result[0][0] > 0.5:
                 st.write("Prediction: Oil Spill Detected!")
             else:
