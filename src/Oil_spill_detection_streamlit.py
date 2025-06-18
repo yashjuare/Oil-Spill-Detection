@@ -30,7 +30,7 @@ def main():
         """
         <style>
         .stApp {
-            background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fcargo-ship&psig=AOvVaw0ADmW5EXgeiR_NP9Om7nXB&ust=1750358986852000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPiGoMTR-40DFQAAAAAdAAAAABAE");
+            background-image: url("https://www.shutterstock.com/shutterstock/photos/2472934623/display_1500/stock-photo-cargo-container-ship-cargo-vessel-ship-carrying-container-and-running-for-import-export-concept-2472934623.jpg");
             background-size: cover;
         }
         </style>
