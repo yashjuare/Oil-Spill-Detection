@@ -69,7 +69,7 @@ def main():
          "Class0_sample1.jpg", "Class0_sample2.jpg", "Class0_sample3.jpg",
          "Class0_sample4.jfif", "Class0_sample5.jfif", "Class0_sample6.jfif"),
         index=0,
-        placeholder=None
+        placeholder="Select any one image sample"
     )
 
     # Load image from either file or sample
