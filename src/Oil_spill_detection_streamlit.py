@@ -26,6 +26,10 @@ def mask(data):
 
 # App UI
 def main():
+    st.set_page_config(
+    page_title="Oil Spill Detection",
+    layout="wide",
+    initial_sidebar_state="expanded") 
     st.markdown(
         """
         <style>
