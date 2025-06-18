@@ -1,4 +1,3 @@
-libgl1
 tensorflow
 pillow
 matplotlib
