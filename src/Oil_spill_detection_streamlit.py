@@ -21,7 +21,7 @@ def predict(data):
 
 # Mask function (YOLOv8 detection)
 def mask(data):
-    new_results = yolov8_model.predict(data, conf=0.5)
+    new_results = yolov8_model.predict(data, conf=0.4)
     return new_results[0].plot()  # Returns NumPy image with detection drawn
 
 # App UI
@@ -30,7 +30,7 @@ def main():
         """
         <style>
         .stApp {
-            background-image: url("https://images.stockcake.com/public/0/0/d/00d46b62-2f48-49fb-b8cb-463708816905_large/midnight-ocean-waves-stockcake.jpg");
+            background-image: url("https://images.stockcake.com/public/8/0/8/8082dcee-4e17-4a7a-89a6-ad3ecaef3546_large/moonlit-ocean-mysteries-stockcake.jpg");
             background-size: cover;
         }
         section[data-testid="stSidebar"] {
