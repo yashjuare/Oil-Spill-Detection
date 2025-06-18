@@ -78,9 +78,12 @@ def main():
         st.session_state["image_data"] = np.array(data)
         st.image(data, caption="Uploaded Image", use_column_width=True)
     elif sample_option:
-        data = Image.open(f"sample_images/{sample_option}")
-        st.session_state["image_data"] = np.array(data)
-        st.image(data, caption=f"Sample: {sample_option}", use_column_width=True)
+        if sample_option=="Select any one image sample":
+            pass
+        else:
+            data = Image.open(f"sample_images/{sample_option}")
+            st.session_state["image_data"] = np.array(data)
+            st.image(data, caption=f"Sample: {sample_option}", use_column_width=True)
     else:
         st.sidebar.info("Upload an image or choose a sample above.")
 
