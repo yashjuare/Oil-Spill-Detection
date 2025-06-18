@@ -68,7 +68,8 @@ def main():
          "Class1_sample4.jfif", "Class1_sample5.jfif", "Class1_sample6.jfif",
          "Class0_sample1.jpg", "Class0_sample2.jpg", "Class0_sample3.jpg",
          "Class0_sample4.jfif", "Class0_sample5.jfif", "Class0_sample6.jfif"),
-        index=0
+        index=0,
+        placeholder="Choose only one image" 
     )
 
     # Load image from either file or sample
