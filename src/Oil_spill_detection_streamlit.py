@@ -21,7 +21,7 @@ def predict(data):
 
 # Mask function (YOLOv8 detection)
 def mask(data):
-    new_results = yolov8_model.predict(data, conf=0.4)
+    new_results = yolov8_model.predict(data, conf=0.2)
     return new_results[0].plot()  # Returns NumPy image with detection drawn
 st.set_page_config(
 page_title="Oil Spill Detection",
