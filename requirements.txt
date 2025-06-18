@@ -3,3 +3,4 @@ pillow
 matplotlib
 ultralytics
 pandas
+libgl1
