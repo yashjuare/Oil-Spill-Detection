@@ -21,7 +21,7 @@ def predict(data):
 
 # Mask function (YOLOv8 detection)
 def mask(data):
-    new_results = yolov8_model.predict(data, conf=0.3)
+    new_results = yolov8_model.predict(data, conf=0.5)
     return new_results[0].plot()  # Returns NumPy image with detection drawn
 
 # App UI
@@ -30,7 +30,7 @@ def main():
         """
         <style>
         .stApp {
-            background-image: url("https://www.shutterstock.com/shutterstock/photos/2472934623/display_1500/stock-photo-cargo-container-ship-cargo-vessel-ship-carrying-container-and-running-for-import-export-concept-2472934623.jpg");
+            background-image: url("https://www-cdn.eumetsat.int/files/styles/16_9_large/public/2023-10/ocean-color.jpg?h=e5aec6c8&itok=eS5RYIRn");
             background-size: cover;
         }
         </style>
@@ -74,7 +74,7 @@ def main():
             st.session_state["prediction"] = result
             st.write(f"Raw Model Output: {result}")
             if result[0][0] > 0.5:
-                st.success("✅ Oil Spill Detected!")
+                st.success("🔴 Oil Spill Detected!")
             else:
                 st.info("🟢 No Oil Spill Detected.")
 
