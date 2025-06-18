@@ -6,4 +6,4 @@ keras
 Pillow
 matplotlib
 ultralytics
-opencv-python
+opencv-python-headless
