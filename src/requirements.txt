@@ -1,7 +1,5 @@
-libgl1
 tensorflow
 pillow
-opencv-contrib-python
 matplotlib
 ultralytics
 pandas
