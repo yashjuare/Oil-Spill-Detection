@@ -88,8 +88,8 @@ def main():
             if result[0][0] > 0.5:
                 st.write("Prediction: Oil Spill Detected!")
                 if st.button("View Mask Image"):
-                mask_img = mask(data)
-                st.image(mask_img, caption="Detected Mask", use_column_width=True)
+                    mask_img = mask(data)
+                    st.image(mask_img, caption="Detected Mask", use_column_width=True)
             else:
                 st.write("Prediction: No Oil Spill Detected!")
                 
