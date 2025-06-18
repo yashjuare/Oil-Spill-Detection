@@ -79,7 +79,8 @@ def main():
         st.image(data, caption="Uploaded Image", use_column_width=True)
     elif sample_option:
         if sample_option=="Select any one image sample":
-            pass
+            st.info("Please select sample image")
+
         else:
             data = Image.open(f"sample_images/{sample_option}")
             st.session_state["image_data"] = np.array(data)
