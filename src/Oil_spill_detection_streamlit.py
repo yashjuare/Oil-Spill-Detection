@@ -30,7 +30,7 @@ def main():
         """
         <style>
         .stApp {
-            background-image: url("https://static.vecteezy.com/system/resources/previews/027/804/562/non_2x/blue-water-surface-background-free-photo.jpg");
+            background-image: url("https://images.stockcake.com/public/3/1/7/317563bb-9971-4032-baac-ac0f956cf453/moonlit-ocean-ripples-stockcake.jpg");
             background-size: cover;
         }
         </style>
