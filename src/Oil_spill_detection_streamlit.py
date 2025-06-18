@@ -64,7 +64,7 @@ def main():
     # Sample image selection
     sample_option = st.sidebar.selectbox(
         "Or select a sample image",
-        ("", "Class1_sample1.jpg", "Class1_sample2.jpg", "Class1_sample3.jpg",
+        ("Class1_sample1.jpg", "Class1_sample2.jpg", "Class1_sample3.jpg",
          "Class1_sample4.jfif", "Class1_sample5.jfif", "Class1_sample6.jfif",
          "Class0_sample1.jpg", "Class0_sample2.jpg", "Class0_sample3.jpg",
          "Class0_sample4.jfif", "Class0_sample5.jfif", "Class0_sample6.jfif"),
