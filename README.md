@@ -19,7 +19,15 @@
 <li>PIL</li>
 <li>Shutil</li>
 <li>Keras</li>
-<li>Matplotlib</li>
+<li>Matplotlib</li>\
+</ul>
+<hr>
+<b>deep learning model used :</b><br> 
+<ul>
+<li>Unet</li>
+<li>YoloV8</li>
+<li>Maskrcnn</li>
+<li>Venilla Convolution Neural Network</li>
 </ul>
 <hr>
 <u>Methdology</u>
