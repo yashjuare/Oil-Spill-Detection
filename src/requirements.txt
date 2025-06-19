@@ -1,3 +1,9 @@
+streamlit
+pandas
+numpy
 tensorflow
-pillow
+keras
+Pillow
+matplotlib
+ultralytics
 opencv-python-headless
