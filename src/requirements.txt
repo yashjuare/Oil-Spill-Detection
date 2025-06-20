@@ -6,4 +6,4 @@ tensorflow==2.12.0
 keras==2.12.0
 Pillow
 matplotlib
-ultralytics
+ultralytics==8.0.20
