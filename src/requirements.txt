@@ -1,9 +1,10 @@
 streamlit
 pandas
 numpy
+opencv-python-headless
 tensorflow
 keras
 Pillow
 matplotlib
 ultralytics
-opencv-python-headless
+
