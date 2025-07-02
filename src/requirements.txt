@@ -7,5 +7,5 @@ tensorflow
 keras
 Pillow
 matplotlib
-ultralytics==8.0.20
+ultralytics
 
