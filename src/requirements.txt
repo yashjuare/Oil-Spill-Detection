@@ -7,3 +7,4 @@ keras==2.12.0
 Pillow
 matplotlib
 ultralytics==8.0.20
+setuptools
