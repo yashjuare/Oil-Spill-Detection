@@ -1,9 +1,9 @@
 setuptools 
-streamlit>=1.25
-pandas>=2.0
-numpy>=1.24
-tensorflow==2.14.0
-keras==2.14.0
+streamlit
+pandas
+numpy
+tensorflow
+keras
 Pillow
 matplotlib
 ultralytics==8.0.150
