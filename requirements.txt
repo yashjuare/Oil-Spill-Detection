@@ -1,6 +1,6 @@
+libgl1-mesa-glxsetuptools
 freeglut3-dev
 libgtk2.0-dev
-libgl1-mesa-glxsetuptools
 streamlit
 pandas
 numpy
