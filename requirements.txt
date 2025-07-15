@@ -2,8 +2,8 @@ setuptools
 streamlit
 pandas
 numpy
-tensorflow
-keras
+tensorflow==2.16.1
+keras==2.16.0
 Pillow
 matplotlib
 ultralytics==8.0.150
