@@ -24,7 +24,7 @@ Oil spills pose a significant threat to marine ecosystems, human health, and coa
 <li>PIL</li>
 <li>Shutil</li>
 <li>Keras</li>
-<li>Matplotlib</li>\
+<li>Matplotlib</li>
 </ul>
 <hr>
 <b>deep learning model used :</b><br> 
