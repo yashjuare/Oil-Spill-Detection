@@ -1,7 +1,7 @@
 <h3>Porject Name</h3>
 <b>Oil Spill Detection</b>
 <b>Project Status : Completed</b>
-<a href=https://oil-spilled-detection.streamlit.app/>View Demo</a>
+<a href=https://oil-spill-detection.streamlit.app/>View Demo</a>
 <hr> 
 <b><u>Problem statement :</u></b> Detection of oil spills in vast ocean is an time consuming and inaccurate process. Most of the process is done by manual monitoring and satellite-based techniques which are often slow, prone to human error, and lack scalability.<br>
 <hr>
