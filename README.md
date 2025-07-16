@@ -34,7 +34,10 @@ Oil spills pose a significant threat to marine ecosystems, human health, and coa
 </ul>
 <hr>
 <u>Methdology</u>
-<img src="workflow of oil spilled detection.PNG"  width="500" height="600">
+
+<div style="text-align: center;">
+<img src="workflow of oil spilled detection.PNG"  width="1000" height="1200">
+</div>
 <hr>
 <b>Data Preprocessing :</b>  
 <br>
