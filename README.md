@@ -4,9 +4,9 @@
 <b>Project Status : Completed</b>
 <a href= https://drive.google.com/file/d/1aR4A_QPYJ33yDLZL0L6owi7NUUDhRBAD/view?usp=drive_link>View Demo</a>
 
-<a href=https://oil-spill-detection.streamlit.app/>
+<a href=https://oil-spill-detection.streamlit.app/> <p align="center">
 <img src="img/dashboard.PNG"  width="800" height="600">
-</a>
+</p> </a>
 <hr> 
 <b><u>Problem statement :</u></b> Detection of oil spills in vast ocean is an time consuming and inaccurate process. Most of the process is done by manual monitoring and satellite-based techniques which are often slow, prone to human error, and lack scalability.<br>
 <hr>
