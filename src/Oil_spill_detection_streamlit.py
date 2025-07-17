@@ -76,7 +76,7 @@ def main():
     if file_upload:
         data = Image.open(file_upload)
         st.session_state["image_data"] = np.array(data)
-        st.image(data, caption="Uploaded Image", width=700)
+        st.image(data, caption="Uploaded Image", width=500)
     elif sample_option:
         if sample_option=="Select any one image sample":
             st.info("Please select sample image")
@@ -103,7 +103,7 @@ def main():
     if st.button("View Mask Image"):
         if "image_data" in st.session_state:
             mask_img = mask(st.session_state["image_data"])
-            st.image(mask_img, caption="Detected Mask (YOLOv8)", width=700)
+            st.image(mask_img, caption="Detected Mask (YOLOv8)", width=500)
 
 # Run app
 if __name__ == "__main__":
