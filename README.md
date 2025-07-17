@@ -5,7 +5,7 @@
 <a href= https://drive.google.com/file/d/1aR4A_QPYJ33yDLZL0L6owi7NUUDhRBAD/view?usp=drive_link>View Demo</a>
 
 <a href=https://oil-spill-detection.streamlit.app/> <p align="center">
-<img src="dashboard.PNG"  width="800" height="600">
+<img src="img/dashboard.PNG"  width="800" height="600">
 </p> </a>
 <hr> 
 <b><u>Problem statement :</u></b> Detection of oil spills in vast ocean is an time consuming and inaccurate process. Most of the process is done by manual monitoring and satellite-based techniques which are often slow, prone to human error, and lack scalability.<br>
@@ -54,18 +54,20 @@ Since SAR uses microwave radiation, it can penetrate through clouds and operate 
 <hr>
 <b>deep learning model used :</b><br> 
 <ul>
-<li>YoloV8</li>
-<li>Convolution Neural Network</li>
+<li>Convolution Neural Network (Image Classification)</li>
+<li>YoloV8 (Image Segmentation)</li>
 </ul>
 <hr>
 <u>Methdology</u>
 
 <p align="center">
-<img src="workflow of oil spilled detection.PNG"  width="800" height="600">
+<img src="img/workflow of oil spilled detection.PNG"  width="800" height="600">
 </p>
-<hr>
+
 <b>Data Preprocessing :</b>  
-<br>
+<p>
 Data Modeling:<br>
 Model Evaluation:<br>
 <b>Model Deployment:</b><br>
+<hr>
+
