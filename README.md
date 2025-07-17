@@ -1,7 +1,7 @@
 <h3>Porject Name</h3>
 <b>Oil Spill Detection</b>
 <b>Project Status : Completed</b>
-<a href= demo video.mp4>View Demo</a>
+<a src= demo video.mp4>View Demo</a>
 
 <a href=https://oil-spill-detection.streamlit.app/> <p align="center">
 <img src="dashboard.PNG"  width="800" height="600">
